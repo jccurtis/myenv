@@ -59,6 +59,7 @@ fonts=(
   font-source-code-pro
   font-source-code-pro-for-powerline
   font-open-sans
+  font-inconsolata
 )
 
 echo "Installing Fonts..."
