@@ -37,6 +37,7 @@ apps=(
   google-chrome
   #google-hangouts
   iterm2
+  mactex
   odrive
   pdfexpert
   plain-clip
@@ -49,6 +50,9 @@ apps=(
 
 echo "Installing Apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
+
+echo "chown-ing the tezlive install so tlmgr will work"
+sudo chown -R whoami /usr/local/texlive/
 
 # -------------------------------------
 # Install Fonts
