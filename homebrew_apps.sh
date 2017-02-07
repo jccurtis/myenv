@@ -39,6 +39,7 @@ apps=(
   iterm2
   mactex
   odrive
+  onyx
   pdfexpert
   plain-clip
   skype
