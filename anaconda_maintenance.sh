@@ -2,4 +2,4 @@
 
 conda update conda
 conda update --all
-pip install --upgrade lmfit
+pip install --upgrade lmfit flake8
