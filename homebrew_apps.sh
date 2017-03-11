@@ -13,6 +13,7 @@ tools=(
   git
   mas
   openssl
+  pandoc
   psgrep
   shellcheck
   ssh-copy-id
