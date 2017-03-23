@@ -10,6 +10,7 @@ tools=(
   ack
   cmake
   curl
+  docker
   git
   mas
   openssl
