@@ -30,6 +30,7 @@ brew install ${tools[@]}
 # -------------------------------------
 
 apps=(
+  adobe-creative-cloud
   appcleaner
   atom
   filezilla

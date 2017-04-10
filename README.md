@@ -18,6 +18,10 @@ Set `Preferences>General` at the bottom `Load Preferences form a custom folder o
 
 ## Adobe
 
+```bash
+open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
+```
+
 ## bashrc
 
 Download git user prompt tool
