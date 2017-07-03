@@ -33,7 +33,7 @@ bash install_git_ps1.sh
 Add to `./bash_profile`:
 
 ```bash
-source ~/repos/bashrc.sh
+source ~/repos/macOS-setup/bashrc.sh
 ```
 
 ## TODO
