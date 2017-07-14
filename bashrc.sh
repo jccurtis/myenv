@@ -87,9 +87,9 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 # -----------------------------------------------------------------------------
-# ipython notebook
+# jupyter notebook
 # -----------------------------------------------------------------------------
-alias nb='jupyter notebook'
+alias nb='jupyter notebook --browser=chrome'
 
 # -----------------------------------------------------------------------------
 # misc cmds
