@@ -1,14 +1,11 @@
-My macOS setup and App installation
+# My UNIX setup and App installation
 
-## Misc
+Download:
 
-- Remove Siri from touchbar
-- Add lock screen to touchbar
-- [Prevent auto rearrangement of desktops](http://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops)
-
-## iTerm2
-
-Set `Preferences>General` at the bottom `Load Preferences form a custom folder or URL` to `~/repos/macOS-setup` (this directory).
+```bash
+mkdir ~/repos
+git clone git@github.com:jccurtis/unix-setup.git ~/repos/unix-setup
+```
 
 ## Atom
 1. Install package `sync-settings`
@@ -16,28 +13,31 @@ Set `Preferences>General` at the bottom `Load Preferences form a custom folder o
 1. Input GIST key
 1. Input GIST id (last part of gist link). For example my gist is [here](https://gist.github.com/jccurtis/769b5665e8d8bd5383ab) and my ID is `769b5665e8d8bd5383ab`
 
-## Adobe
-
-```bash
-open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
-```
-
 ## bashrc
 
 Download git user prompt tool
 
 ```bash
+cd general
 bash install_git_ps1.sh
 ```
 
-Add to `./bash_profile`:
+Add to `.bashrc` or `./bash_profile`:
 
 ```bash
-source ~/repos/unix-setup/bashrc.sh
+source ~/repos/unix-setup/general/bashrc.sh
 ```
 
-## TODO
+Auto load ssh-key with `ssh-add`:
 
-- [ ] Add preference script (keyboard repeat, display behavior)
-- [ ] Add tap click to preferences
-- [ ] Automate default Apps to open filetypes?
+On `macOS`:
+
+```bash
+ssh-add -K ~/.ssh/id-rsa &> /dev/null
+```
+
+On `ubuntu`:
+
+```bash
+ssh-add ~/.ssh/id-rsa &> /dev/null
+```
