@@ -63,6 +63,7 @@ brew cask install \
     font-source-code-pro-for-powerline \
     font-open-sans \
     font-inconsolata \
+    font-inconsolata-for-powerline
 
 # -------------------------------------
 # Cleanup
