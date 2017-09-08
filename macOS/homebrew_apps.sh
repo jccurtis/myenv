@@ -4,75 +4,65 @@
 # Install Tools
 # -------------------------------------
 
-tools=(
-  autoconf
-  automake
-  ack
-  cmake
-  curl
-  docker
-  git
-  mas
-  openssl
-  pandoc
-  psgrep
-  shellcheck
-  ssh-copy-id
-  wget
-)
-
 echo "installing tools..."
-brew install ${tools[@]}
+brew install \
+    autoconf \
+    automake \
+    ack \
+    cmake \
+    curl \
+    docker \
+    git \
+    mas \
+    openssl \
+    pandoc \
+    psgrep \
+    shellcheck \
+    ssh-cop-id \
+    wget
 
 # -------------------------------------
 # Install apps to: /Applications
 # Default is:      $HOME/Applications
 # -------------------------------------
 
-apps=(
-  adobe-creative-cloud
-  appcleaner
-  atom
-  filezilla
-  firefox
-  flux
-  github-desktop
-  google-chrome
-  #google-hangouts
-  iterm2
-  mactex
-  odrive
-  onyx
-  pdfexpert
-  plain-clip
-  skype
-  spotify
-  sublime-text
-  vlc
-  xquartz
-)
-
 echo "Installing Apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew cask install --appdir="/Applications" \
+    adobe-creative-cloud \
+    appcleaner \
+    atom \
+    filezilla \
+    firefox \
+    flux \
+    github-desktop \
+    google-chrome \
+    #google-hangouts \
+    iterm2 \
+    mactex \
+    odrive \
+    onyx \
+    pdfexpert \
+    plain-clip \
+    skype \
+    spotify \
+    sublime-text \
+    vlc \
+    xquartz
 
-echo "chown-ing the tezlive install so tlmgr will work"
+echo "chown-ing the texlive install so tlmgr will work"
 sudo chown -R whoami /usr/local/texlive/
 
 # -------------------------------------
 # Install Fonts
 # -------------------------------------
 
-fonts=(
-  font-monoid
-  font-source-code-pro
-  font-source-code-pro-for-powerline
-  font-open-sans
-  font-inconsolata
-)
-
 echo "Installing Fonts..."
-brew cask install ${fonts[@]}#!/bin/sh
-
+brew cask install \
+    font-monoid \
+    font-source-code-pro \
+    font-source-code-pro-for-powerline \
+    font-open-sans \
+    font-inconsolata \
 
 # -------------------------------------
 # Cleanup
