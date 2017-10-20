@@ -17,6 +17,7 @@ brew install \
     openssl \
     pandoc \
     psgrep \
+    rsync \
     shellcheck \
     ssh-cop-id \
     wget
