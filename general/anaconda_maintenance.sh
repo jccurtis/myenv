@@ -1,5 +1,5 @@
 #!/bin/env/bash
 
-conda update conda
-conda update --all
+conda update -y conda
+conda update -y --all
 pip install --upgrade lmfit
