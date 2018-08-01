@@ -40,6 +40,7 @@ brew cask install --appdir="/Applications" \
     #google-hangouts \
     iterm2 \
     mactex \
+    mendeley \
     odrive \
     onyx \
     pdfexpert \
