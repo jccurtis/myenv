@@ -48,6 +48,7 @@ brew cask install --appdir="/Applications" \
     skype \
     spotify \
     sublime-text \
+    visual-studio-code \
     vlc \
     xquartz
 
