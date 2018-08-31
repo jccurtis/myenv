@@ -87,6 +87,13 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 # -----------------------------------------------------------------------------
+# Activate envs
+# -----------------------------------------------------------------------------
+alias source_anaconda="export PATH=\$HOME/anaconda/bin:\$PATH"
+alias source_megalib="source \$HOME/megalib/bin/source-megalib.sh"
+alias source_ros="source /opt/ros/kinetic/setup.bash"
+
+# -----------------------------------------------------------------------------
 # jupyter notebook
 # -----------------------------------------------------------------------------
 alias nb='jupyter notebook --browser=chrome'
