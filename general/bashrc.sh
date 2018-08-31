@@ -87,6 +87,12 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 # -----------------------------------------------------------------------------
+# git
+# -----------------------------------------------------------------------------
+git config --global push.default simple
+git config credential.helper 'cache --timeout=86400'
+
+# -----------------------------------------------------------------------------
 # Activate envs
 # -----------------------------------------------------------------------------
 alias source_anaconda="export PATH=\$HOME/anaconda/bin:\$PATH"
