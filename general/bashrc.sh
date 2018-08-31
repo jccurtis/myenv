@@ -90,7 +90,7 @@ export GREP_OPTIONS='--color=auto'
 # git
 # -----------------------------------------------------------------------------
 git config --global push.default simple
-git config credential.helper 'cache --timeout=86400'
+git config --global credential.helper 'cache --timeout=86400'
 
 # -----------------------------------------------------------------------------
 # Activate envs
