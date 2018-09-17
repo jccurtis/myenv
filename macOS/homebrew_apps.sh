@@ -19,7 +19,7 @@ brew install \
     psgrep \
     rsync \
     shellcheck \
-    ssh-cop-id \
+    ssh-copy-id \
     wget
 
 # -------------------------------------
