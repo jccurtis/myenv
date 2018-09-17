@@ -35,7 +35,7 @@ brew cask install --appdir="/Applications" \
     filezilla \
     firefox \
     flux \
-    github-desktop \
+    github \
     google-chrome \
     #google-hangouts \
     iterm2 \
