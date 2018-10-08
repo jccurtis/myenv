@@ -17,7 +17,8 @@ sudo apt-get install -y docker-ce
 sudo usermod -a -G docker $USER
 
 # Atom
-# http://tipsonubuntu.com/2016/08/05/install-atom-text-editor-ubuntu-16-04/
-sudo add-apt-repository ppa:webupd8team/atom
+# https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux
+curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
 sudo apt-get install atom
