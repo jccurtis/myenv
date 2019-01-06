@@ -13,4 +13,3 @@ echo “Installing Homebrew...”
 
 brew tap caskroom/versions
 brew tap caskroom/fonts
-brew tap homebrew/dupes
