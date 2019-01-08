@@ -42,7 +42,7 @@ brew cask install --appdir="/Applications" \
     mendeley \
     odrive \
     onyx \
-    pdfexpert \
+    pdf-expert \
     plain-clip \
     skype \
     spotify \
