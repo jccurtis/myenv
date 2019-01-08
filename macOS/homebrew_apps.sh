@@ -72,4 +72,4 @@ brew cask install \
 # -------------------------------------
 
 echo "Cleaning up cask downloads..."
-brew cask cleanup
+brew cleanup
