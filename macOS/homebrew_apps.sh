@@ -53,7 +53,7 @@ brew cask install --appdir="/Applications" \
     xquartz
 
 echo "chown-ing the texlive install so tlmgr will work"
-sudo chown -R whoami /usr/local/texlive/
+sudo chown -R $(whoami) /usr/local/texlive/
 
 # -------------------------------------
 # Install Fonts
