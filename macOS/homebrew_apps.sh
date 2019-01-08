@@ -37,7 +37,6 @@ brew cask install --appdir="/Applications" \
     flux \
     github \
     google-chrome \
-    #google-hangouts \
     iterm2 \
     mactex \
     mendeley \
