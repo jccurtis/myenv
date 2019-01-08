@@ -32,7 +32,6 @@ brew cask install --appdir="/Applications" \
     adobe-creative-cloud \
     appcleaner \
     atom \
-    filezilla \
     firefox \
     flux \
     github \
