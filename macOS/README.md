@@ -1,6 +1,42 @@
 # macOS Setup
 
-## Misc
+Install [homebrew](https://brew.sh/)
+
+Switch to this repo:
+
+```bash
+cd ~repos/unix-setup/macOS
+```
+
+Install cmd line tools and apps from the [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
+
+```bash
+brew update
+brew bundle
+```
+
+Cleanup downloaded files:
+
+```bash
+brew cleanup
+```
+
+Change texlive installation owner so tlmgr will work:
+
+```bash
+sudo chown -R $(whoami) /usr/local/texlive/
+```
+
+## Maintenance
+
+Rerun the bundler to check for updates:
+
+```bash
+brew update
+brew bundle
+```
+
+## Todo
 
 - Remove Siri from touchbar
 - Add lock screen to touchbar
