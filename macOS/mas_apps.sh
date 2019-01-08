@@ -14,9 +14,6 @@ mas install 1142625137
 # Slack
 mas install 803453959
 
-# Kiwi for Gmail
-mas install 986304488
-
 # LastPass: Password Manager and Secure Vault
 mas install 926036361
 
