@@ -76,6 +76,15 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # $PWD  # full pathname of current directory
 PS1="$BRIGHT_BOLD_GREEN\u$BRIGHT_BOLD_WHITE@$BRIGHT_BOLD_BLUE\h$BRIGHT_BOLD_WHITE:$BRIGHT_BOLD_MAGENTA\w$BRIGHT_BOLD_YELLOW\$(__git_ps1 '(%s)')$BRIGHT_BOLD_CYAN[\D{%F %T}]$NO_COLOR\n\$ "
 
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
 # -----------------------------------------------------------------------------
 # ls
 # -----------------------------------------------------------------------------
