@@ -1,6 +1,13 @@
 # General tools
 sudo apt-get update
-sudo apt-get install -y git wget cmake make curl htop
+sudo apt-get install -y \
+    git \
+    wget \
+    cmake \
+    make \
+    curl \
+    htop \
+    vim
 
 # Fonts
 sudo apt-get install -y fonts-inconsolata
