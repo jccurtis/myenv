@@ -15,8 +15,7 @@ cd ~/repos/unix-setup/macOS
 Install cmd line tools and apps from the [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
 
 ```bash
-brew update
-brew bundle
+brew.sh
 ```
 
 Cleanup downloaded files:
@@ -54,8 +53,7 @@ open /Applications/odrive.app
 Rerun the bundler to check for updates:
 
 ```bash
-brew update
-brew bundle
+brew.sh
 ```
 
 ## TODO
