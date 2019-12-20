@@ -111,7 +111,7 @@ alias source_megalib="source \$HOME/megalib/bin/source-megalib.sh"
 # -----------------------------------------------------------------------------
 # jupyter notebook
 # -----------------------------------------------------------------------------
-alias nb='jupyter notebook --browser=chrome'
+alias nb='jupyter notebook --browser firefox'
 
 # -----------------------------------------------------------------------------
 # misc cmds
