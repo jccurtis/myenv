@@ -4,6 +4,10 @@ this_dir="$( cd "$(dirname "$0")" ; pwd -P )"
 zshrc="${HOME}/.zshrc"
 
 echo "Installing Oh My Zsh!"
+#   CHSH    - 'no' means the installer will not change the default shell (default: yes)
+#   RUNZSH  - 'no' means the installer will not run zsh after the install (default: yes)
+export CHSH="no"
+export RUNZSH="no"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Exit on error
