@@ -110,3 +110,7 @@ DEFAULT_USER="jccurtis"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [[ -f /usr/share/vcstool-completion/vcs.zsh ]]; then 
+  source /usr/share/vcstool-completion/vcs.zsh
+fi
