@@ -79,6 +79,9 @@ plugins=(
   docker
   docker-compose
   docker-machine
+  brew
+  extract
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
