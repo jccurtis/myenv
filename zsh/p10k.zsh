@@ -37,6 +37,7 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
       # =========================[ Line #1 ]=========================
+      context                 # user@hostname
       os_icon                 # os identifier
       status                  # exit code of the last command
       dir                     # current directory
@@ -44,9 +45,9 @@
       command_execution_time  # duration of the last command
       background_jobs         # presence of background jobs
       direnv                  # direnv status (https://direnv.net/)
-      virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
+      # virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
       anaconda                # conda environment (https://conda.io/)
-      pyenv                   # python environment (https://github.com/pyenv/pyenv)
+      # pyenv                   # python environment (https://github.com/pyenv/pyenv)
       # goenv                   # go environment (https://github.com/syndbg/goenv)
       # nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
       # nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
@@ -57,7 +58,6 @@
       # kubecontext             # current kubernetes context (https://kubernetes.io/)
       # terraform               # terraform workspace (https://www.terraform.io)
       # aws                     # aws profile (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
-      context                 # user@hostname
       # nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
       # ranger                  # ranger shell (https://github.com/ranger/ranger)
       # vim_shell               # vim shell indicator (:sh)
