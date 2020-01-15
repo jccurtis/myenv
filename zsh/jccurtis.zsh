@@ -122,6 +122,6 @@ if [[ -f /usr/share/vcstool-completion/vcs.zsh ]]; then
   source /usr/share/vcstool-completion/vcs.zsh
 fi
 
-if [[ -d ~/.local/bin ]]; then
-  export PATH="${PATH}:~/.local/bin"
+if [[ -d ${HOME}/.local/bin ]]; then
+  export PATH="${PATH}:${HOME}/.local/bin"
 fi
