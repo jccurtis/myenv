@@ -114,14 +114,16 @@ DEFAULT_USER="jccurtis"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [[ -f /usr/share/vcstool-completion/vcs.zsh ]]; then
+# Global vcstool install
+if [ -f /usr/share/vcstool-completion/vcs.zsh ]; then
   source /usr/share/vcstool-completion/vcs.zsh
 fi
 
-if [[ -f /usr/share/vcstool-completion/vcs.zsh ]]; then
-  source /usr/share/vcstool-completion/vcs.zsh
+# Local vcstool install
+if [ -f ${HOME}/.local/share/vcstool-completion/vcs.zsh ]; then
+  source ${HOME}/.local/share/vcstool-completion/vcs.zsh
 fi
 
-if [[ -d ${HOME}/.local/bin ]]; then
+if [ -d ${HOME}/.local/bin ]; then
   export PATH="${PATH}:${HOME}/.local/bin"
 fi
