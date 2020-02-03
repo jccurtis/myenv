@@ -127,3 +127,14 @@ fi
 if [ -d ${HOME}/.local/bin ]; then
   export PATH="${PATH}:${HOME}/.local/bin"
 fi
+
+# Path to this setup repo (with resolved symlinks)
+# https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh
+# https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself
+SOURCE=${(%):-%N}
+while [ -h "$SOURCE" ]; do
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+export UNIX_SETUP_REPO="$(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd ))"

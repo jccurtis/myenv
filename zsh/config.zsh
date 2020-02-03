@@ -65,6 +65,9 @@ cd $HOME/.oh-my-zsh/custom/themes/powerlevel10k
 git checkout master
 git pull
 
+# Add upgrade line
+append_line '[[ ! -f ${UNIX_SETUP_REPO}/general/check_for_upgrade.zsh ]] || zsh ${UNIX_SETUP_REPO}/general/check_for_upgrade.zsh' $zshrc
+
 echo "Restart your terminal for the changes to take effect ..."
 
 set +e
