@@ -82,6 +82,7 @@ plugins=(
   brew
   extract
   vscode
+  conda-zsh-completion
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,6 +114,9 @@ DEFAULT_USER="jccurtis"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# conda autocomplete
+compinit conda
 
 # Global vcstool install
 if [ -f /usr/share/vcstool-completion/vcs.zsh ]; then

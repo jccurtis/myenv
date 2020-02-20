@@ -18,6 +18,7 @@ function _bump_update() {
 function _upgrade() {
   env UPGRADE_REPO=$UNIX_SETUP_REPO sh $UNIX_SETUP_REPO/general/upgrade.sh
   env UPGRADE_REPO=$ZSH/custom/themes/powerlevel10k sh $UNIX_SETUP_REPO/general/upgrade.sh
+  env UPGRADE_REPO=$ZSH/custom/plugins/conda-zsh-completion sh $UNIX_SETUP_REPO/general/upgrade.sh
   _bump_update
 }
 

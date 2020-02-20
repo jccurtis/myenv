@@ -49,6 +49,18 @@ append_line() {
     fi
 }
 
+clone_it() {
+    local remote=$1
+    local dest=$2
+    local branch=$3
+    if [[ ! -d $dest ]]; then
+        git clone $remote $dest
+    fi
+    cd $dest
+    git checkout $branch
+    git pull
+}
+
 symlink_it "${this_dir}/jccurtis.zsh" "${HOME}/.jccurtis.zsh"
 append_line "[[ ! -f ~/.jccurtis.zsh ]] || source ~/.jccurtis.zsh" $zshrc
 
@@ -58,12 +70,8 @@ echo "Source ${zshrc}"
 symlink_it "${this_dir}/p10k.zsh" "${HOME}/.p10k.zsh"
 append_line "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" $zshrc
 
-if [[ ! -d $HOME/.oh-my-zsh/custom/themes/powerlevel10k ]]; then
-    git clone https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
-fi
-cd $HOME/.oh-my-zsh/custom/themes/powerlevel10k
-git checkout master
-git pull
+clone_it "https://github.com/romkatv/powerlevel10k.git" $HOME/.oh-my-zsh/custom/themes/powerlevel10k master
+clone_it "https://github.com/esc/conda-zsh-completion.git" $HOME/.oh-my-zsh/custom/plugins/conda-zsh-completion master
 
 # Add upgrade line
 append_line '[[ ! -f ${UNIX_SETUP_REPO}/general/check_for_upgrade.zsh ]] || zsh ${UNIX_SETUP_REPO}/general/check_for_upgrade.zsh' $zshrc
