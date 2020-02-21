@@ -1,2 +1,4 @@
 .last-update
 .lock-update
+custom/*
+!custom/README.md

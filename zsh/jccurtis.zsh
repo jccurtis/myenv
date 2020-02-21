@@ -128,6 +128,7 @@ if [ -f ${HOME}/.local/share/vcstool-completion/vcs.zsh ]; then
   source ${HOME}/.local/share/vcstool-completion/vcs.zsh
 fi
 
+# Local tools (pip, etc)
 if [ -d ${HOME}/.local/bin ]; then
   export PATH="${PATH}:${HOME}/.local/bin"
 fi
@@ -142,3 +143,9 @@ while [ -h "$SOURCE" ]; do
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
 export UNIX_SETUP_REPO="$(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd ))"
+
+# Custom
+cd $UNIX_SETUP_REPO/custom
+for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
+  source $f
+done
