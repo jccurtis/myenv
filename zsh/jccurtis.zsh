@@ -149,3 +149,4 @@ cd $UNIX_SETUP_REPO/custom
 for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
   source $f
 done
+cd - > /dev/null
