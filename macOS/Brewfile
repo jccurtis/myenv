@@ -29,8 +29,8 @@ brew "zsh-completions"
 
 cask "adobe-creative-cloud"
 cask "appcleaner"
-cask "atom"
-cask "cyberduck"
+# cask "atom"
+# cask "cyberduck"
 cask "firefox"
 # cask "flux"
 # cask "github"
@@ -40,11 +40,11 @@ cask "mactex"
 cask "mendeley-reference-manager"
 cask "odrive"
 # cask "onyx"
-cask "pdf-expert"
+# cask "pdf-expert"
 cask "plain-clip"
 cask "skype"
 cask "spotify"
-cask "sublime-text"
+# cask "sublime-text"
 cask "visual-studio-code"
 cask "vlc"
 cask "xquartz"
@@ -63,8 +63,8 @@ cask "font-hack-nerd-font"
 mas "Fantastical 2", id: 975937182
 mas "Memory Clean 2", id: 1114591412
 mas "Window Focus", id: 1142625137
-mas "Slack", id: 803453959
+# mas "Slack", id: 803453959
 mas "LastPass", id: 926036361
-mas "Microsoft Remote Desktop", id: 715768417
+# mas "Microsoft Remote Desktop", id: 715768417
 mas "Moom", id: 419330170
 mas "MPlayerX", id: 421131143

@@ -3,5 +3,6 @@ brew update
 brew bundle --verbose
 
 # Cleanup zsh-autocompletions
-rm -f ~/.zcompdump; compinit
+rm -f ~/.zcompdump
+compinit
 chmod go-w '/usr/local/share'
