@@ -67,12 +67,23 @@ append_line "[[ ! -f ~/.jccurtis.zsh ]] || source ~/.jccurtis.zsh" $zshrc
 echo "Source ${zshrc}"
 # . $zshrc
 
+echo "Install tmux mods"
+
+clone_it "https://github.com/gpakosz/.tmux.git" $HOME/.oh-my-tmux master
+cd $HOME
+rm_safe .tmux.conf
+ln -s -f .oh-my-tmux/.tmux.conf
+rm_safe .tmux.conf.local
+ln -s -f ${this_dir}/tmux.conf.local .tmux.conf.local
+cd $this_dir
+
+echo "Installing zsh mods"
+
 symlink_it "${this_dir}/p10k.zsh" "${HOME}/.p10k.zsh"
 append_line "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" $zshrc
 
 clone_it "https://github.com/romkatv/powerlevel10k.git" $HOME/.oh-my-zsh/custom/themes/powerlevel10k master
 clone_it "https://github.com/esc/conda-zsh-completion.git" $HOME/.oh-my-zsh/custom/plugins/conda-zsh-completion master
-clone_it
 
 # Add upgrade line
 append_line '[[ ! -f ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh ]] || zsh ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh' $zshrc
