@@ -83,6 +83,8 @@ plugins=(
   extract
   vscode
   conda-zsh-completion
+  vagrant
+  vagrant-prompt
 )
 
 source $ZSH/oh-my-zsh.sh
