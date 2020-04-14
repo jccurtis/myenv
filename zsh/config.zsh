@@ -84,6 +84,7 @@ append_line "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" $zshrc
 
 clone_it "https://github.com/romkatv/powerlevel10k.git" $HOME/.oh-my-zsh/custom/themes/powerlevel10k master
 clone_it "https://github.com/esc/conda-zsh-completion.git" $HOME/.oh-my-zsh/custom/plugins/conda-zsh-completion master
+clone_it "https://github.com/zsh-users/zsh-completions.git" $HOME/.oh-my-zsh/custom/plugins/zsh-completions master
 
 # Add upgrade line
 append_line '[[ ! -f ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh ]] || zsh ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh' $zshrc
