@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # get paths
-general_dir="$( cd "$(dirname "$0")" ; pwd -P )"
-env_script_src="${general_dir}/bashrc.sh"
+this_dir="$( cd "$(dirname "$0")" ; pwd -P )"
+env_script_src="${this_dir}/bashrc.sh"
 env_script_dest="${HOME}/.bashrc_custom.sh"
 
 if [ -f $env_script_dest ]; then

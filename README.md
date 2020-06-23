@@ -7,7 +7,13 @@ mkdir ~/repos
 git clone git@github.com:jccurtis/unix-setup.git ~/repos/unix-setup
 ```
 
-## Initialization
+## Setup
+
+```bash
+bash setup.sh
+```
+
+This will install everything for a bash or zsh configuration
 
 ### macOS
 
