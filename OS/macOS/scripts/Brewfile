@@ -12,6 +12,7 @@ brew "curl"
 brew "docker"
 brew "git"
 brew "git-flow"
+brew "svn"
 brew "lsusb"
 brew "mas"
 brew "openssl"
@@ -55,12 +56,14 @@ cask "zoomus"
 cask "font-monoid"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
-cask "font-saucecodepro-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 cask "font-open-sans"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "font-hack-nerd-font"
 
+mas "Bear", id: 1091189122
+mas "EasyRes", id: 688211836
 mas "Fantastical 2", id: 975937182
 mas "Memory Clean 2", id: 1114591412
 mas "Window Focus", id: 1142625137
