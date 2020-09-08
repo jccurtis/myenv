@@ -1,15 +1,25 @@
-#!/bin/bash
+#!/bin/zsh
 
 this_dir="$( cd "$(dirname "$0")" ; pwd -P )"
 cd $this_dir
 
+which -s brew;
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+else
+    brew update
+fi
+
 brew analytics off
-brew update
+
+cd $this_dir/../assets
 brew bundle --verbose
+cd $this_dir
 
 # Cleanup zsh-autocompletions
 rm -f ~/.zcompdump
-compinit
+autoload -Uz compinit && compinit
 chmod go-w '/usr/local/share'
 
 # Cleanup
