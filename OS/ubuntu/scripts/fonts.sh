@@ -10,7 +10,6 @@ mkdir -p ~/repos
 
 # Fonts
 sudo apt install -y fonts-inconsolata
-sudo fc-cache -fv
 
 cd ~/repos
 if [[ ! -d "nerd-fonts" ]]; then
@@ -19,3 +18,5 @@ fi
 cd nerd-fonts
 git pull master
 ./install.sh SourceCodePro
+
+sudo fc-cache -fv
