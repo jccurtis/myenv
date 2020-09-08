@@ -12,19 +12,6 @@ sudo apt install -y \
     apt-transport-https \
     ca-certificates
 
-# Fonts
-sudo apt install -y fonts-inconsolata
-sudo fc-cache -fv
-
-mkdir -p ~/repos
-cd ~/repos
-if [[ ! d "nerd-fonts" ]]; then
-    git clone https://github.com/ryanoasis/nerd-fonts.git
-fi
-cd nerd-fonts
-git pull master
-./install.sh SourceCodePro
-
 # Docker
 # https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
