@@ -2,3 +2,4 @@
 .lock-update
 custom/*
 !custom/README.md
+Brewfile.lock.json
