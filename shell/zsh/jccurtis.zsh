@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -147,8 +149,8 @@ done
 export UNIX_SETUP_REPO="$(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd ))"
 
 # Custom
-cd $UNIX_SETUP_REPO/custom
-for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
-  source $f
-done
-cd - > /dev/null
+# cd $UNIX_SETUP_REPO/custom
+# for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
+#   source $f
+# done
+# cd - > /dev/null
