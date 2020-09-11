@@ -146,10 +146,10 @@ while [ -h "$SOURCE" ]; do
   SOURCE="$(readlink "$SOURCE")"
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
-export UNIX_SETUP_REPO="$(dirname $(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd )))"
+export MYENV_REPO="$(dirname $(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd )))"
 
 # Custom
-# cd $UNIX_SETUP_REPO/custom
+# cd $MYENV_REPO/custom
 # for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
 #   source $f
 # done
