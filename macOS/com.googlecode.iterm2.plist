@@ -5473,28 +5473,30 @@
 	<string>795 718 970 459 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>974 957 606 456 0 0 2560 1417 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1080 987 400 129 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 768 620 392 0 0 2560 1417 </string>
+	<string>970 790 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1285 936 609 401 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>984 726 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1714 0 1714 1417 -3440 0 3440 1417 </string>
+	<string>63 940 650 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1714 0 1714 1417 -3440 0 3440 1417 </string>
+	<string>238 675 650 477 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 346 1170 1071 0 0 2560 1417 </string>
+	<string>1318 0 1242 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>-1714 0 1714 1417 -3440 0 3440 1417 </string>
+	<string>64 719 1242 698 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>2560 0 1274 1417 2560 0 2560 1417 </string>
+	<string>0 85 1274 1332 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>-1714 0 1714 1417 -3440 0 3440 1417 </string>
+	<string>982 0 1578 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>15 0 2482 1417 0 0 2560 1417 </string>
+	<string>63 562 1730 855 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>-1054 -935 730 527 -1440 -1120 1440 2560 </string>
+	<string>1255 0 1242 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -6081,7 +6083,7 @@
 			<key>Minimum Contrast</key>
 			<real>0.0</real>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -8806,6 +8808,8 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.8</string>
+		<string>3.3.11</string>
+		<string>3.3.12</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.7</string>
@@ -8831,7 +8835,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{125, 1068}</string>
+		<string>{124, 1068}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -8842,7 +8846,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>562114860.75658298</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>27</integer>
+	<integer>38</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -9674,11 +9678,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-20T01:05:20Z</date>
+	<date>2020-09-09T05:58:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>777932890</integer>
+	<integer>2140578648</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -9714,7 +9718,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
