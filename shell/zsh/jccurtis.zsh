@@ -146,7 +146,7 @@ while [ -h "$SOURCE" ]; do
   SOURCE="$(readlink "$SOURCE")"
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
-export UNIX_SETUP_REPO="$(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd ))"
+export UNIX_SETUP_REPO="$(dirname $(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd )))"
 
 # Custom
 # cd $UNIX_SETUP_REPO/custom
