@@ -149,8 +149,8 @@ done
 export MYENV_REPO="$(dirname $(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd )))"
 
 # Custom
-# cd $MYENV_REPO/custom
-# for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
-#   source $f
-# done
-# cd - > /dev/null
+cd $MYENV_REPO/shell/custom
+for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
+  source $f
+done
+cd - > /dev/null
