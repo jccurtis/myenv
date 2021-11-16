@@ -76,7 +76,7 @@ plugins=(
   git
   bundler
   dotenv
-  osx
+  macos
   python
   docker
   docker-compose
