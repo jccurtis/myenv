@@ -1,18 +1,26 @@
-#!/bin/bash
+# Use the current shell
 
 if [[ "$(uname)" == 'Darwin' ]]; then
-    wget https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.sh -O ~/anaconda_tmp.sh
+    if [[ `uname -m` == 'arm64' ]]; then
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -O ~/_conda_tmp.sh
+    else
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/_conda_tmp.sh
+    fi
 elif [[ "$(uname)" == 'Linux' ]]; then
-    wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -O ~/anaconda_tmp.sh
+    if [[ `uname -m` == 'arm64' ]]; then
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/_conda_tmp.sh
+    else
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/_conda_tmp.sh
+    fi
 fi
 
-bash ~/anaconda_tmp.sh -b -p $HOME/anaconda
-rm ~/anaconda_tmp.sh
+bash ~/_conda_tmp.sh -b -p $HOME/miniconda
+rm ~/_conda_tmp.sh
 
 if [[ $SHELL== *zsh ]]; then
-    ~/anaconda/bin/conda init zsh
+    ~/miniconda/bin/conda init zsh
 elif [[ $SHELL== *bash ]]; then
-    ~/anaconda/bin/conda init bash
+    ~/miniconda/bin/conda init bash
 else
     echo "Cannot init anaconda for this shell: $SHELL"
 fi
