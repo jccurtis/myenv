@@ -3,8 +3,8 @@
 
 zmodload zsh/datetime
 
-last_update_path="${UNIX_SETUP_REPO}/.last-update"
-update_lock_dir="${UNIX_SETUP_REPO}/.lock-update"
+last_update_path="${MYENV_REPO}/.last-update"
+update_lock_dir="${MYENV_REPO}/.lock-update"
 update_days=1
 
 function _current_epoch() {
@@ -16,16 +16,16 @@ function _bump_update() {
 }
 
 function _upgrade() {
-  env UPGRADE_REPO=$UNIX_SETUP_REPO sh $UNIX_SETUP_REPO/general/upgrade.sh
-  env UPGRADE_REPO=$ZSH/custom/themes/powerlevel10k sh $UNIX_SETUP_REPO/general/upgrade.sh
-  env UPGRADE_REPO=$ZSH/custom/plugins/conda-zsh-completion sh $UNIX_SETUP_REPO/general/upgrade.sh
-  env UPGRADE_REPO=$ZSH/custom/plugins/zsh-completions sh $UNIX_SETUP_REPO/general/upgrade.sh
-  env UPGRADE_REPO=$HOME/.oh-my-tmux sh $UNIX_SETUP_REPO/general/upgrade.sh
+  env UPGRADE_REPO=$MYENV_REPO sh $MYENV_REPO/noOS/upgrade.sh
+  env UPGRADE_REPO=$ZSH/custom/themes/powerlevel10k sh $MYENV_REPO/noOS/upgrade.sh
+  env UPGRADE_REPO=$ZSH/custom/plugins/conda-zsh-completion sh $MYENV_REPO/noOS/upgrade.sh
+  env UPGRADE_REPO=$ZSH/custom/plugins/zsh-completions sh $MYENV_REPO/noOS/upgrade.sh
+  env UPGRADE_REPO=$HOME/.oh-my-tmux sh $MYENV_REPO/noOS/upgrade.sh
   _bump_update
 }
 
 # Cancel upgrade if the current user doesn't have write permissions
-[[ -w "$UNIX_SETUP_REPO" ]] || return 0
+[[ -w "$MYENV_REPO" ]] || return 0
 
 # Cancel upgrade if git is unavailable on the system
 whence git >/dev/null || return 0

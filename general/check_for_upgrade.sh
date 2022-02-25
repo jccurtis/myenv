@@ -1,1 +1,0 @@
-../zsh/check_for_upgrade.zsh

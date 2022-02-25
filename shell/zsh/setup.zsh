@@ -87,7 +87,7 @@ clone_it "https://github.com/esc/conda-zsh-completion.git" $HOME/.oh-my-zsh/cust
 clone_it "https://github.com/zsh-users/zsh-completions.git" $HOME/.oh-my-zsh/custom/plugins/zsh-completions master
 
 # Add upgrade line
-append_line '[[ ! -f ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh ]] || zsh ${UNIX_SETUP_REPO}/zsh/check_for_upgrade.zsh' $zshrc
+append_line '[[ ! -f ${MYENV_REPO}/zsh/check_for_upgrade.zsh ]] || zsh ${MYENV_REPO}/zsh/check_for_upgrade.zsh' $zshrc
 
 echo "Restart your terminal for the changes to take effect ..."
 

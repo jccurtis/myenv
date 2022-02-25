@@ -2,7 +2,12 @@
 
 ## Initialization
 
-### Install everything with homebrew
+### Install everything
+
+```
+
+
+with homebrew
 
 Install [homebrew](https://brew.sh/)
 
@@ -12,7 +17,9 @@ Switch to this repo:
 cd ~/repos/unix-setup/macOS
 ```
 
-Install cmd line tools and apps from the [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
+## Refs
+
+* [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
 
 ```bash
 brew.sh

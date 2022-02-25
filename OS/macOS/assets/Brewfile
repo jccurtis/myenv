@@ -12,11 +12,14 @@ brew "curl"
 brew "docker"
 brew "git"
 brew "git-flow"
+brew "imagemagick"
+brew "svn"
 brew "lsusb"
 brew "mas"
 brew "openssl"
 brew "pandoc"
 brew "psgrep"
+brew "rclone"
 brew "rsync"
 brew "shellcheck"
 brew "ssh-copy-id"
@@ -34,15 +37,15 @@ cask "appcleaner"
 cask "firefox"
 # cask "flux"
 # cask "github"
-# cask "google-chrome"
+cask "google-chrome"
 cask "iterm2"
-cask "mactex"
+# cask "mactex"
 cask "mendeley-reference-manager"
 cask "odrive"
 # cask "onyx"
 # cask "pdf-expert"
 cask "plain-clip"
-cask "skype"
+# cask "skype"
 cask "spotify"
 # cask "sublime-text"
 cask "visual-studio-code"
@@ -54,16 +57,18 @@ cask "zoom"
 cask "font-monoid"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
-cask "font-saucecodepro-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 cask "font-open-sans"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "font-hack-nerd-font"
 
+mas "Bear", id: 1091189122
+mas "EasyRes", id: 688211836
 mas "Fantastical 2", id: 975937182
 mas "Memory Clean 2", id: 1114591412
 mas "Window Focus", id: 1142625137
-# mas "Slack", id: 803453959
+mas "Slack", id: 803453959
 mas "LastPass", id: 926036361
 # mas "Microsoft Remote Desktop", id: 715768417
 mas "Moom", id: 419330170

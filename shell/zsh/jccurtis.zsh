@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -74,7 +76,7 @@ plugins=(
   git
   bundler
   dotenv
-  osx
+  macos
   python
   docker
   docker-compose
@@ -144,10 +146,10 @@ while [ -h "$SOURCE" ]; do
   SOURCE="$(readlink "$SOURCE")"
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
-export UNIX_SETUP_REPO="$(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd ))"
+export MYENV_REPO="$(dirname $(dirname $( cd -P "$( dirname "$SOURCE" )" && pwd )))"
 
 # Custom
-cd $UNIX_SETUP_REPO/custom
+cd $MYENV_REPO/shell/custom
 for f in $(find . -name "*.sh" -type f -o -name "*.zsh"); do
   source $f
 done
