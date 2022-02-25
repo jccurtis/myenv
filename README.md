@@ -4,16 +4,10 @@ Download:
 
 ```bash
 mkdir ~/repos
-git clone git@github.com:jccurtis/unix-setup.git ~/repos/unix-setup
+git clone git@github.com:jccurtis/unix-setup.git ~/.myenv
 ```
 
 ## Setup
-
-```bash
-bash setup.sh
-```
-
-This will install everything for a bash or zsh configuration
 
 ### macOS
 
@@ -25,41 +19,11 @@ Add me!
 
 ## Basic Env
 
-### Atom
-1. Install package `sync-settings`
-1. Make new GIST key [here](https://github.com/settings/tokens/new) with `Create gists` enabled.
-1. Input GIST key
-1. Input GIST id (last part of gist link). For example my gist is [here](https://gist.github.com/jccurtis/769b5665e8d8bd5383ab) and my ID is `769b5665e8d8bd5383ab`
+### `zsh`
 
-### bashrc
+I've moved to using zshell everywhere I configure things like this. See
+[`README.md`](./shell/zsh/README.md) for more details.
 
-Download git user prompt tool
+### `bash` (legacy)
 
-```bash
-cd general
-bash install_git_ps1.sh
-```
-
-Add to `~/.bashrc` (Ubuntu) or `~/.bash_profile` (macOS):
-
-```bash
-source ~/repos/unix-setup/general/bashrc.sh
-```
-
-## Optional
-
-### SSH Key Auto Loading
-
-Auto load ssh-key with `ssh-add`:
-
-On `macOS`:
-
-```bash
-ssh-add -K ~/.ssh/id-rsa &> /dev/null
-```
-
-On `ubuntu`:
-
-```bash
-ssh-add ~/.ssh/id-rsa &> /dev/null
-```
+See [`README.md`](./shell/bash/README.md) for more details.

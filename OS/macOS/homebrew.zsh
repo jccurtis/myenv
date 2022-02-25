@@ -7,13 +7,15 @@ which -s brew;
 if [[ $? != 0 ]] ; then
     # Install Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/iccurtis/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     brew update
 fi
 
 brew analytics off
 
-cd $this_dir/../assets
+cd $this_dir/assets
 brew bundle --verbose
 cd $this_dir
 

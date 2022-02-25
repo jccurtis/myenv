@@ -1,5 +1,9 @@
 # `zsh` Config
 
+```zsh
+./setup.zsh
+```
+
 ## References:
 
 * http://zsh.sourceforge.net/Doc/Release/

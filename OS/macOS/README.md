@@ -1,58 +1,57 @@
 # macOS Setup
 
-## Initialization
+## System
 
-### Install everything
+* Trackpad direction to not natural (I'm old school :rofl:)
+* Remove Siri from touchbar
+* Add lock screen to touchbar
+* [Prevent auto rearrangement of desktops](http://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops)
 
-```
-
-
-with homebrew
-
-Install [homebrew](https://brew.sh/)
-
-Switch to this repo:
+## Command line tools
 
 ```bash
-cd ~/repos/unix-setup/macOS
+xcode-select --install
 ```
 
-## Refs
-
-* [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
+## homebrew
 
 ```bash
-brew.sh
+./homebrew.zsh
 ```
 
-Cleanup downloaded files:
+Note this uses [`Brewfile`](https://github.com/Homebrew/homebrew-bundle)!
+
+## zsh
 
 ```bash
-brew cleanup
+zsh ./scripts/homebrew.zsh
 ```
 
-### Texlive
+## iTerm2
 
-Change texlive installation owner so tlmgr will work:
+Set `Preferences>General` at the bottom `Load Preferences from a custom folder
+or URL` to `~/repos/unix-setup/macOS` (this directory).
 
-```bash
-sudo chown -R $(whoami) /usr/local/texlive/
-```
-
-### iTerm2
-
-Set `Preferences>General` at the bottom `Load Preferences from a custom folder or URL` to `~/repos/unix-setup/macOS` (this directory).
-
-### Adobe
+## Adobe
 
 ```bash
 open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
 ```
 
-### Odrive
+## Odrive
 
 ```bash
 open /Applications/odrive.app
+```
+
+## SSH Key Auto Loading
+
+Auto load ssh-key with `ssh-add`:
+
+On `macOS`:
+
+```bash
+ssh-add -K ~/.ssh/id-rsa &> /dev/null
 ```
 
 ## Maintenance
@@ -65,9 +64,6 @@ brew.sh
 
 ## TODO
 
-- [ ] Remove Siri from touchbar
-- [ ] Add lock screen to touchbar
-- [ ] [Prevent auto rearrangement of desktops](http://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops)
 - [ ] Add preference script (keyboard repeat, display behavior)
 - [ ] Add tap click to preferences
 - [ ] Automate default Apps to open filetypes?
