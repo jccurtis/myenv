@@ -1,11 +1,16 @@
 # macOS Setup
 
-## System
+## Misc Preferences
 
-* Trackpad direction to not natural (I'm old school :rofl:)
-* Remove Siri from touchbar
-* Add lock screen to touchbar
-* [Prevent auto rearrangement of desktops](http://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops)
+* Mission control
+    * [Prevent auto rearrangement of desktops](http://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops)
+* Dock
+    * Move Dock to side
+    * Uncheck show recent applications
+* Keyboard adn trackpad
+    * Trackpad direction to not natural (I'm old school :rofl:)
+    * Remove Siri from touchbar
+    * Add lock screen to touchbar
 
 ## Command line tools
 
