@@ -26,6 +26,10 @@ See [`README.md`](./shell/bash/README.md) for more details.
 cd noOS && bash configure_git.sh
 ```
 
+```bash
+git config --global user.email "<email>"
+```
+
 ### anaconda
 
 Install anaconda and init with the current shell.
