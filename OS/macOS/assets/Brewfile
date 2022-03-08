@@ -62,6 +62,7 @@ cask "font-open-sans"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "font-hack-nerd-font"
+cask "font-fontawesome"
 
 mas "Bear", id: 1091189122
 mas "EasyRes", id: 688211836
