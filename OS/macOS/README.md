@@ -37,6 +37,13 @@ zsh ./scripts/homebrew.zsh
 Set `Preferences>General` at the bottom `Load Preferences from a custom folder
 or URL` to `~/repos/unix-setup/macOS` (this directory).
 
+## VSCode
+
+Install Settings Sync. Setup to login to github (see preferences). Find your
+gist [here](https://gist.github.com) (if you have your settings already sync'd)
+or create a gist to target. If you already have a settings gist use the command
+pallette to Download them. Otherwise manually upload them to start.
+
 ## Adobe
 
 ```bash
