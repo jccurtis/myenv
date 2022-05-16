@@ -56,14 +56,13 @@ open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.a
 open /Applications/odrive.app
 ```
 
-## SSH Key Auto Loading
+## SSH Key and Auto Loading
 
 Auto load ssh-key with `ssh-add`:
 
-On `macOS`:
-
 ```bash
-ssh-add -K ~/.ssh/id-rsa &> /dev/null
+ssh-keygen -t ed25519 -C "<email>"
+ssh-add --apple-use-keychain ~/.ssh/id-rsa &> /dev/null
 ```
 
 ## Maintenance
