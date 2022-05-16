@@ -61,8 +61,8 @@ clone_it() {
     git pull
 }
 
-symlink_it "${this_dir}/jccurtis.zsh" "${HOME}/.jccurtis.zsh"
-append_line "[[ ! -f ~/.jccurtis.zsh ]] || source ~/.jccurtis.zsh" $zshrc
+symlink_it "${this_dir}/myenv.zsh" "${HOME}/.myenv.zsh"
+append_line "[[ ! -f ~/.myenv.zsh ]] || source ~/.myenv.zsh" $zshrc
 
 echo "Source ${zshrc}"
 # . $zshrc

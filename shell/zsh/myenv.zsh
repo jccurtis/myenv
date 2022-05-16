@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-DEFAULT_USER="jccurtis"
+DEFAULT_USER="$(whoami)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
