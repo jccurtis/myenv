@@ -30,6 +30,8 @@ brew "brew-cask-completion"
 brew "zsh-completions"
 brew "zsh-completions"
 
+cask "1password"
+cask "slack"
 cask "adobe-creative-cloud"
 cask "appcleaner"
 # cask "atom"
@@ -39,6 +41,7 @@ cask "firefox"
 # cask "github"
 cask "google-chrome"
 cask "iterm2"
+cask "lastpass"
 # cask "mactex"
 cask "mendeley-reference-manager"
 cask "odrive"
@@ -64,13 +67,13 @@ cask "font-inconsolata-for-powerline"
 cask "font-hack-nerd-font"
 cask "font-fontawesome"
 
-mas "Bear", id: 1091189122
-mas "EasyRes", id: 688211836
-mas "Fantastical 2", id: 975937182
+# mas "Bear", id: 1091189122
+# mas "EasyRes", id: 688211836
+# mas "Fantastical 2", id: 975937182
 # mas "Memory Clean 2", id: 1114591412
 # mas "Window Focus", id: 1142625137
-mas "Slack", id: 803453959
-mas "LastPass", id: 926036361
+# mas "Slack", id: 803453959
+# mas "LastPass", id: 926036361
 # mas "Microsoft Remote Desktop", id: 715768417
 # mas "Moom", id: 419330170
 # mas "MPlayerX", id: 421131143
