@@ -7,7 +7,7 @@
 * Dock
     * Move Dock to side
     * Uncheck show recent applications
-* Keyboard adn trackpad
+* Keyboard and trackpad
     * Trackpad direction to not natural (I'm old school :rofl:)
     * Remove Siri from touchbar
     * Add lock screen to touchbar
