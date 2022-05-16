@@ -3,3 +3,4 @@
 shell/custom/*
 !shell/custom/README.md
 Brewfile.lock.json
+.DS_Store
