@@ -23,7 +23,7 @@ if [ -z "$_script" ]; then
     exit 1
 fi
 echo "Downloading: $_script"
-curl "$_script" --output $HOME/_tmp.sh
+wget "$_script" -O $HOME/_tmp.sh
 
 bash $HOME/_tmp.sh -b
 rm $HOME/_tmp.sh
