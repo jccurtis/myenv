@@ -80,7 +80,6 @@ plugins=(
   python
   docker
   docker-compose
-  docker-machine
   brew
   extract
   vscode
